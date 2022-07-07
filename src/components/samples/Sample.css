@@ -1,0 +1,80 @@
+.btns{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0,0,0,0);
+  transform-origin: center;
+  transform: scale(0);
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transition: transform .2s cubic-bezier(.75,.75,1,1) , background .1s ease-in , border-radius .1s ease-out ;
+  -webkit-transition: transform .2s cubic-bezier(.75,.75,1,1) , background .1s ease-in , border-radius .1s ease-out ;
+  -moz-transition: transform .2s cubic-bezier(.75,.75,1,1) , background .1s ease-in , border-radius .1s ease-out ;
+  -ms-transition: transform .2s cubic-bezier(.75,.75,1,1) , background .1s ease-in , border-radius .1s ease-out ;
+  -o-transition: transform .2s cubic-bezier(.75,.75,1,1) , background .1s ease-in , border-radius .1s ease-out ;
+}
+.sample:hover .btns{
+  background: rgba(0,0,0,.3);
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+.btns button{
+  background-color: rgba(255, 255, 255);
+  color:#000000;
+  width: 100px ;
+  height: auto;
+  border:none;
+  border-radius: 100vh;
+  -webkit-border-radius: 100vh;
+  -moz-border-radius: 100vh;
+  -ms-border-radius: 100vh;
+  -o-border-radius: 100vh;
+  margin: 0 10px;
+}
+@media only screen and (max-width:576px) {
+  .btns button{
+    transform:translateY(150%);
+    -webkit-transform:translateY(150%);
+    -moz-transform:translateY(150%);
+    -ms-transform:translateY(150%);
+    -o-transform:translateY(150%);
+    border:2px solid black;
+    margin-top:10px;
+}
+  .btns{
+    width: 100%;
+    align-items: flex-end;
+    justify-content: center;
+    transition:none;
+    -webkit-transition:none;
+    -moz-transition:none;
+    -ms-transition:none;
+    -o-transition:none;
+    transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+}
+  .sample:hover .btns{
+    background:none;
+    
+  }
+  .sample{
+    margin-bottom: 30%;
+    margin-top: 10px;
+    display: flex;
+    align-items: flex-end;
+  }
+}

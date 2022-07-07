@@ -1,0 +1,28 @@
+h1{
+  font-size: clamp(20px,30px,60px) !important;
+}
+.list{
+  display: grid;
+  grid-template-columns: repeat(3,30%);
+  place-items: center;
+  justify-content: center;
+  grid-auto-flow: dense;
+  grid-gap: 1rem;
+}
+.sample{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 30vw;
+  height:calc(((30vw*9)/16));
+  border: 1px solid black;
+}
+@media only screen and (max-width:576px) {
+  .list{
+    grid-template-columns: 70vw;
+  }
+  .sample{
+    width:80vw;
+    height:calc(((80vw*9)/16))
+  }
+}
