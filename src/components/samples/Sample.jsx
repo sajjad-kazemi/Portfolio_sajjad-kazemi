@@ -13,7 +13,7 @@ function Sample({ resume }) {
               <button onClick={()=> window.open(sample.code)} className="btnCode">Code</button>
               <button onClick={() =>window.open(sample.preview)} className="btnPreview">Preview</button>
             </div>
-            <div className="title">{sample.name}</div>
+            <h1 className="title">{sample.name}</h1>
           </div>
         );
       })}
