@@ -1,5 +1,4 @@
 import './App.css'
-import "bootstrap/dist/css/bootstrap.min.css";
 
 import Samples from './components/samples/Samples'
 import bootstrap from './img/bootstrapsample.png.jpg'
@@ -8,6 +7,8 @@ import cryptocurrency from './img/cryptocurrency.jpg'
 import spinnerwheel from './img/spinnerwheel.png.jpg'
 import { useState } from 'react'
 import wordle from  './img/wordle.png.jpg'
+// import "bootstrap/dist/css/bootstrap.min.css";
+
 
 const resume = {
   cryptoCurrency:{
