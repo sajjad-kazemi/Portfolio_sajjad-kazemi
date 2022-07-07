@@ -1,20 +1,25 @@
 import './App.css'
 
+import {Route, BrowserRouter as Router, Routes} from 'react-router-dom'
+
+import ErNotFound from './components/ErNotFound/ErNotFound'
 import Navbar from './components/Navbar/Navbar'
 import Samples from './components/Samples/Samples'
 import resume from './resume'
 
-// import "bootstrap/dist/css/bootstrap.min.css";
-
-
-
 function App() {
   return (
     <>
-        <Navbar/>
-      <section className="container-fluid">
-        <Samples resume={resume}/>
-      </section>
+      <Router>
+        <Routes>
+          <Route path='/' element={<Navbar/>}>
+            <Route index element={<Samples resume={resume}/>}/>
+            {/* <Route path="About"/>
+            <Route path="Contact"/> */}
+            <Route path="*" element={<ErNotFound/>}/>
+          </Route>
+        </Routes>
+      </Router>
     </>
   )
 }

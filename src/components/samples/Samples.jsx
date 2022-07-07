@@ -5,9 +5,11 @@ import Sample from './Sample'
 
 const Samples = ({resume}) => {
   return (
-      <main className='list'>
-        <Sample resume={resume}/>
-      </main>
+      <section>
+        <main className='list'>
+          <Sample resume={resume}/>
+        </main>
+      </section>
   )
 }
 
