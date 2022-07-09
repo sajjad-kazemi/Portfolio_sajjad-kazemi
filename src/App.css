@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Titan+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&family=Roboto+Slab&family=Titan+One&display=swap');
 *{
   box-sizing: border-box;
   margin: 0;
@@ -7,6 +7,6 @@
 body{
   font-family: 'Roboto Slab', serif;
   overflow-y: scroll;
-  padding-top: 7%;
-  background-color:#839791;
+  padding-top: 7vh;
+  background-color:#fff;
 }

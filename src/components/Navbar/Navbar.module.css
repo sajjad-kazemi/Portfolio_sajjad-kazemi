@@ -12,22 +12,31 @@
   margin-left: 5px;
   margin-right:5px;
   flex-shrink: 2;
-  cursor: pointer;
   width: auto;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items:center;
+  color: #000;
 }
 .list li a{
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  justify-content:center;
+  align-items:center;
   text-decoration: none;
   letter-spacing: 2px;
+  color:inherit !important;
+}
+.list li a:hover{
+  color:rgb(74, 74, 74) !important;
+}
+.list li svg{
+  margin-right: 6px;
 }
 .list li a:visited{
-  color:white;
+  color: #000;
 }
 .navbar{
   position:fixed;
@@ -37,8 +46,8 @@
   top:0;
   display: flex;
   justify-content: space-between;
-  background:#011936;
-  color:#fff;
+  background:#FFC815;
+  color:#000;
   user-select: none;
 }
 .logo{
@@ -70,7 +79,9 @@
   }
   .list li {
     flex-shrink: 2;
-    font-size:clamp(5px,20px,30px);
+  }
+  .list li a{
+    font-size:clamp(.5rem, 5vw, 4rem) !important;
   }
   .logo h1{
     display: none;

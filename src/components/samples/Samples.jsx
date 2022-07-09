@@ -5,7 +5,7 @@ import Sample from './Sample'
 
 const Samples = ({resume}) => {
   return (
-      <section>
+      <section className="list-container">
         <main className='list'>
           <Sample resume={resume}/>
         </main>

@@ -2,6 +2,8 @@ import './App.css'
 
 import {Route, BrowserRouter as Router, Routes} from 'react-router-dom'
 
+import About from './components/About/About'
+import Contact from './components/Contact/Contact'
 import ErNotFound from './components/ErNotFound/ErNotFound'
 import Navbar from './components/Navbar/Navbar'
 import Samples from './components/Samples/Samples'
@@ -14,8 +16,8 @@ function App() {
         <Routes>
           <Route path='/' element={<Navbar/>}>
             <Route index element={<Samples resume={resume}/>}/>
-            {/* <Route path="About"/>
-            <Route path="Contact"/> */}
+            <Route path="About" element={<About/>}/>
+            <Route path="Contact" element={<Contact/>}/>
             <Route path="*" element={<ErNotFound/>}/>
           </Route>
         </Routes>
