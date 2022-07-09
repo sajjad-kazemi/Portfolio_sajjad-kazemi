@@ -1,4 +1,4 @@
-import {Envelope, GeoAlt, Github} from 'react-bootstrap-icons'
+import {Chat, Envelope, GeoAlt, Github, Send} from 'react-bootstrap-icons'
 
 import emailJs from '@emailjs/browser'
 import style from './Contact.module.css'
@@ -8,7 +8,7 @@ function Contact() {
   const form = useRef()
   const sendEmail = (e) => {
     e.preventDefault();
-    emailJs.sendForm('service_u282q0g', 'template_2d89bqf', form.current, 'uFBeCmqsE39TtCN-e')
+
     .then((result) => {
       alert('your email message got sent.');
     }, (error) => {
