@@ -2,12 +2,40 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
-  margin-top: 10%;
+  margin-top: 5%;
+}
+.infoList{
+  display: flex;
+  justify-content:center;
+  flex-direction: row;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+.info{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  font-size: clamp(.5rem, 15vw, 1rem);
+}
+.info>*{
+  margin:0 10px;
+  flex-shrink:2
+}
+.info a{
+  color:#717702;
+  text-decoration: none;
+}
+.info a:visited{
+  color:#717702;
+}
+.git{
+  align-self: flex-start;
 }
 .mail{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  font-size: clamp(.2rem, 5vw, 1rem);
 }
+/* .emailjs{
+} */
