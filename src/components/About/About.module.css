@@ -81,14 +81,13 @@
   -ms-border-radius: 100vh;
   -o-border-radius: 100vh;
   background-image: repeating-linear-gradient(45deg, #21008e ,#21008e 5px ,#48ff00 5px, #48ff00 10px);
-  background-size:500%;
   background-position:-100% 0;
 }
 .skillBar .bar::before{
   position:absolute;
   z-index:10;
 }
-/*  */
+
 .htmlCss .bar::before{
   content:var(--htmlCssStr);
 }
@@ -131,6 +130,7 @@
     justify-content:flex-start;
     padding:0;
     margin-left: 10px;
+    margin-top:7%
   }
   .section>div{
     width: 100%;

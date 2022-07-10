@@ -2,6 +2,9 @@ section{
   animation: enter .2s ;
   -webkit-animation: enter .2s forwards;
 }
+body{
+  overflow: visible ;
+}
 @keyframes enter {
   from{
     opacity: 0;

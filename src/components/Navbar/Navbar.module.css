@@ -1,7 +1,6 @@
 .list{
   font-family: 'Titan One', cursive;
-  font-weight: lighter;
-  width: 50%;
+  width: 50vw;
   list-style: none;
   display: flex;
   flex-direction: row-reverse;
@@ -39,9 +38,10 @@
   color: #000;
 }
 .navbar{
-  position:fixed;
+  position: -webkit-sticky !important;
+  position:sticky !important;
   z-index: 99;
-  width: 100vw;
+  width: 100%;
   height: auto;
   top:0;
   display: flex;
@@ -65,7 +65,8 @@
 }
 @media only screen and (max-width:768px) {
   .navbar{
-    top:100%;
+    position:fixed !important;
+    top:100% !important;
     transform:translateY(-100%);
     -webkit-transform:translateY(-100%);
     -moz-transform:translateY(-100%);

@@ -8,6 +8,7 @@ h1{
   justify-content: center;
   grid-auto-flow: dense;
   grid-gap: 1rem;
+  margin-bottom: 5%;
 }
 .sample{
   position:relative;
@@ -19,7 +20,7 @@ h1{
   border: 1px solid black;
 }
 .list-container{
-  margin-top:7%;
+  margin-top:2%;
 }
 @media only screen and (max-width:768px) {
   .list{
