@@ -1,5 +1,5 @@
+import {Envelope, Person, ViewList} from 'react-bootstrap-icons'
 import {Link, Outlet} from 'react-router-dom'
-import {Person, Postcard, ViewList} from 'react-bootstrap-icons'
 
 import logo from '../../Logo.svg'
 import style from './Navbar.module.css'
@@ -13,7 +13,7 @@ function Navbar() {
         <ul className={style.list}>
           <li><Link to='/'><ViewList/> { (window.innerWidth > 768) && 'Portfolio'}</Link></li>
           <li><Link to='/About'><Person/>{ (window.innerWidth > 768) && 'About'}</Link></li>
-          <li><Link to='/Contact'><Postcard/> { (window.innerWidth > 768) && 'Contact'}</Link></li>
+          <li><Link to='/Contact'><Envelope/> { (window.innerWidth > 768) && 'Contact'}</Link></li>
         </ul>
       </nav>
       <Outlet/>

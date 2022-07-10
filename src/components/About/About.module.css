@@ -7,22 +7,35 @@
   --reactStr:"70%";
   --mui:30%;
   --muiStr:"30%";
+  --bootstrap:100%;
+  --bootstrapStr: "100%";
 }
 .section{
+  width: 100%;
+  height:fit-content;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  align-items: flex-start;
-  min-height: 100%;
-  position:absolute;
-  padding: 0 40px;
+  align-items: baseline;
+  padding-left:10px;
 }
-.section>div{
-  width:50%;
+.about{
+  position: inherit;
+  width: 50%;
+  margin-top:30px;
+}
+.skills{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: space-around;
+  height: fit-content;
 }
 .about{
   align-self: center;
   padding-right: 10px;
+  width: 50vw;
 }
 .title{
   font-family: 'Raleway' , sans-serif;
@@ -35,33 +48,21 @@
   font-family: 'Raleway', sans-serif;
   font-size: 25px;
 }
-.skills{
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  align-self: center;
-  height: 100%;
-  width: 50%;
-  margin-bottom: 30%;
-}
 
 .skillBar h3{
   font-family: 'Roboto Slab', sans-serif;
-  position: relative;
+  font-size: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin:40px 0 10px 0;
-  width: 100%;
 }
 .bar{
   position: absolute;
   width: 80% !important;
   height: 5px;
   background-color: #eee;
-  margin: 15px 0 15px 30px;
+  margin: 0 0 20px 30px;
   border-radius: 100vh;
   -webkit-border-radius: 100vh;
   -moz-border-radius: 100vh;
@@ -72,7 +73,6 @@
   content: "";
   width: 100%;
   height: 100%;
-  background-color: blue;
   position: inherit;
   transform-origin: left;
   border-radius: 100vh;
@@ -124,37 +124,29 @@
   animation-duration: 1.2s;
   animation-timing-function: ease-in-out;
 }
-@media only screen and (max-width:768px) {
+.bootstrap .bar::before{
+  content: var(--bootstrapStr)
+}
+.bootstrap .bar::after{
+  width:var(--bootstrap);
+  animation-name: Animboot;
+  animation-duration: 1.2s;
+  animation-timing-function: ease-in-out;
+}
+@media only screen and (max-width:768px) and (orientation:landscape), only screen and (max-height:768px) and (orientation:portrait) {
   .section{
     flex-direction: column;
-    justify-content:flex-start;
-    padding:0;
-    margin-left: 10px;
-    margin-top:7%
-  }
-  .section>div{
-    width: 100%;
-  }
-  .skills{
-  justify-content:flex-start;
-  padding-left: 10px;
-  width: 100%;
-  }
-  .skillBar{
-    width: 100%;
-    transform:translateY(-50px);
-    -webkit-transform:translateY(-50px);
-    -moz-transform:translateY(-50px);
-    -ms-transform:translateY(-50px);
-    -o-transform:translateY(-50px);
+    margin-bottom: 30vmax;
+    align-items: center;
+    justify-content: center;
   }
   .about{
-    transform:translateY(-10px);
-    -webkit-transform:translateY(-10px);
-    -moz-transform:translateY(-10px);
-    -ms-transform:translateY(-10px);
-    -o-transform:translateY(-10px);
-}
+    width: 100%;
+    margin-top:10px
+  }
+  .skills{
+    width: 100%;
+  }
 }
 @keyframes Animhc {
   0%{
@@ -163,25 +155,36 @@
   100%{
     width:var(--htmlCss);
   }
-}@keyframes Animjs {
+}
+@keyframes Animjs {
   0%{
     width:0;
   }
   100%{
     width:var(--js);
   }
-}@keyframes Animrct {
+}
+@keyframes Animrct {
   0%{
     width:0;
   }
   100%{
     width:var(--react);
   }
-}@keyframes Animmui {
+}
+@keyframes Animmui {
   0%{
     width:0;
   }
   100%{
     width:var(--mui);
+  }
+}
+@keyframes Animboot{
+  0%{
+    width:0;
+  }
+  100%{
+    width:var(--bootstrap);
   }
 }
