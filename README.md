@@ -1,2 +1,2 @@
 # Sajjad Kazemi's Portfolio
-## preview => coming soon...
+## preview => https://sajjad-kazemi-portfolio.netlify.app
