@@ -7,8 +7,8 @@ function About() {
       <div className={style.about}>
         <div className={style.title}><h4>Sajjad Kazemi</h4></div>
         <div className={style.title}><h1>Web Developer From Iran</h1></div>
-        <p className={style.aboutText}>A talented Front-end developer who pursues his big dreams in web development and Advance his career
-        I don't have much experience but i'm sure i'm gonna be working with great developers in many companies. </p>
+        <p className={style.aboutText}>A talented Front-end developer who pursues his big dreams in web development and Advance his career.<br/>
+        I don't have any experience of working in a company but I'm sure I'm gonna be working with great developers in many companies in the future. </p>
       </div>
       <div className={style.skills}>
         <div className={`${style.skillBar} ${style.htmlCss}`}><h3>html5-css3</h3><div className={`${style.bar}`}></div></div>
