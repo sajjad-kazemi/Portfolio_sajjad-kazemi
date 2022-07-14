@@ -1,6 +1,7 @@
 import bootstrap from './img/bootstrapsample.png.jpg'
 import calculator from  './img/calculator.png.jpg'
 import cryptocurrency from './img/cryptocurrency.jpg'
+import reduxcart from './img/redux-cart.png.jpg'
 import spinnerwheel from './img/spinnerwheel.png.jpg'
 import wordle from  './img/wordle.png.jpg'
 
@@ -39,6 +40,13 @@ const resume = {
     preview:'https://sajjad-kazemi.github.io/Bootstrap-miniproject/',
     code:'https://github.com/sajjad-kazemi/Bootstrap-miniproject',
     img:bootstrap
+  },
+  reduxCart:{
+    key:6,
+    name:'Shopping cart (Redux)',
+    preview:'https://shoppingcart-width-redux.netlify.app/',
+    code:'',
+    img:reduxcart
   }
 };
 export default resume;
