@@ -44,7 +44,7 @@ const resume = {
   reduxCart:{
     key:6,
     name:'Shopping cart (Redux)',
-    preview:'https://shoppingcart-width-redux.netlify.app/',
+    preview:'https://shoppingcart-with-redux.netlify.app/',
     code:'https://github.com/sajjad-kazemi/Redux-cart',
     img:reduxcart
   }
