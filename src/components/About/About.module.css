@@ -3,12 +3,14 @@
   --htmlCssStr: "100%";
   --js:90%;
   --jsStr:"90%";
-  --react:70%;
-  --reactStr:"70%";
+  --react:80%;
+  --reactStr:"80%";
   --mui:30%;
   --muiStr:"30%";
   --bootstrap:100%;
   --bootstrapStr: "100%";
+  --redux:75%;
+  --reduxStr:"75%";
 }
 .section{
   width: 100%;
@@ -133,6 +135,15 @@
   animation-duration: 1.2s;
   animation-timing-function: ease-in-out;
 }
+.redux .bar::before{
+  content: var(--reduxStr)
+}
+.redux .bar::after{
+  width:var(--redux);
+  animation-name: Animredux;
+  animation-duration: 1.2s;
+  animation-timing-function: ease-in-out;
+}
 @media only screen and (max-width:768px) and (orientation:landscape), only screen and (max-height:768px) and (orientation:portrait) {
   .section{
     flex-direction: column;
@@ -186,5 +197,13 @@
   }
   100%{
     width:var(--bootstrap);
+  }
+}
+@keyframes Animredux{
+  0%{
+    width: 0;
+  }
+  100%{
+    width:var(--redux)
   }
 }

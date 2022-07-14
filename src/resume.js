@@ -1,7 +1,7 @@
 import bootstrap from './img/bootstrapsample.png.jpg'
 import calculator from  './img/calculator.png.jpg'
 import cryptocurrency from './img/cryptocurrency.jpg'
-import reduxcart from './img/redux-cart.png.jpg'
+import reduxcart from './img/redux-cart.jpg'
 import spinnerwheel from './img/spinnerwheel.png.jpg'
 import wordle from  './img/wordle.png.jpg'
 

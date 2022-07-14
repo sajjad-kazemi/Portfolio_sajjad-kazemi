@@ -16,6 +16,8 @@ function About() {
         <div className={`${style.skillBar} ${style.js}`}><h3>Javascript</h3><div className={`${style.bar}`}></div></div>
         <div className={`${style.skillBar} ${style.react}`}><h3>React js</h3><div className={`${style.bar}`}></div></div>
         <div className={`${style.skillBar} ${style.mui}`}><h3>Material UI</h3><div className={`${style.bar}`}></div></div>
+        <div className={`${style.skillBar} ${style.redux}`}><h3>Redux</h3><div className={`${style.bar}`}></div></div>
+
       </div>
     </section>
   )
