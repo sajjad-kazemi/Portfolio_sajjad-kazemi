@@ -1,3 +1,5 @@
 node_modules
 src/components/Contact/emailJs.js
 .netlyfy
+# Local Netlify folder
+.netlify
