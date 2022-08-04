@@ -1,4 +1,4 @@
-import { ChatDots, Envelope, GeoAlt, Github, Send } from "react-bootstrap-icons";
+import { Envelope, GeoAlt, Github, Send } from "react-bootstrap-icons";
 import { useRef, useState } from "react";
 
 import emailJs from "./emailJs";
@@ -21,23 +21,19 @@ function Contact() {
   return (
     <section className={style.section}>
       <div className={style.infoList}>
-        <div className={`${style.mail} ${style.info}`}>
-          <a href="mailto:sajjad9410kazemi@gmail.com">
-            @sajjad9410kazemi@gmail.com
-          </a>
-          <Envelope />
-        </div>
         <div className={`${style.git} ${style.info}`}>
-          <a href="https://github.com/sajjad-kazemi">/sajjad-kazemi</a>
+          <a target="_blank" href="https://github.com/sajjad-kazemi">sajjad-kazemi</a>
           <Github />
         </div>
         <div className={`${style.location} ${style.info}`}>
-          <a href="#">Iran, Tehran</a>
+          <a target="_blank" href="https://goo.gl/maps/JgfExD1QxB2W26T39">Iran, Tehran</a>
           <GeoAlt />
         </div>
       </div>
       <div className={style.emailjs}>
-        <h1 className={style.chat}><ChatDots/></h1>
+        <h1 className={style.chat}>
+          <Envelope />
+          </h1>
         <form className={style.form} ref={form} onSubmit={sendEmail}>
           <label htmlFor="user_name">Name(required)</label>
           <input

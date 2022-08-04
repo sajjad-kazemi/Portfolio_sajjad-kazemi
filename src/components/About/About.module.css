@@ -9,14 +9,14 @@
   --muiStr:"40%";
   --bootstrap:100%;
   --bootstrapStr: "100%";
-  --redux:85%;
-  --reduxStr:"85%";
+  --redux:80%;
+  --reduxStr:"80%";
   --axios:80%;
   --axiosStr:"80%";
   --styledComponent:90%;
   --styledComponentStr:"90%";
-  --sass:100%;
-  --sassStr:"100%";
+  --sass:80%;
+  --sassStr:"80%";
 }
 .section{
   width: 100%;
