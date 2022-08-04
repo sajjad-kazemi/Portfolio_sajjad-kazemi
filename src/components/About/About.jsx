@@ -12,11 +12,14 @@ function About() {
       </div>
       <div className={style.skills}>
         <div className={`${style.skillBar} ${style.htmlCss}`}><h3>html5-css3</h3><div className={`${style.bar}`}></div></div>
-        <div className={`${style.skillBar} ${style.bootstrap}`}><h3>Bootstrap</h3><div className={`${style.bar}`}></div></div>
         <div className={`${style.skillBar} ${style.js}`}><h3>Javascript</h3><div className={`${style.bar}`}></div></div>
         <div className={`${style.skillBar} ${style.react}`}><h3>React js</h3><div className={`${style.bar}`}></div></div>
-        <div className={`${style.skillBar} ${style.mui}`}><h3>Material UI</h3><div className={`${style.bar}`}></div></div>
         <div className={`${style.skillBar} ${style.redux}`}><h3>Redux</h3><div className={`${style.bar}`}></div></div>
+        <div className={`${style.skillBar} ${style.bootstrap}`}><h3>Bootstrap</h3><div className={`${style.bar}`}></div></div>
+        <div className={`${style.skillBar} ${style.mui}`}><h3>Material UI</h3><div className={`${style.bar}`}></div></div>
+        <div className={`${style.skillBar} ${style.axios}`}><h3>Axios</h3><div className={`${style.bar}`}></div></div>
+        <div className={`${style.skillBar} ${style.styledComponent}`}><h3>Styled Components</h3><div className={`${style.bar}`}></div></div>
+        <div className={`${style.skillBar} ${style.sass}`}><h3>Sass</h3><div className={`${style.bar}`}></div></div>
 
       </div>
     </section>

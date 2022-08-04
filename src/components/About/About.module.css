@@ -5,12 +5,18 @@
   --jsStr:"90%";
   --react:80%;
   --reactStr:"80%";
-  --mui:30%;
-  --muiStr:"30%";
+  --mui:40%;
+  --muiStr:"40%";
   --bootstrap:100%;
   --bootstrapStr: "100%";
-  --redux:75%;
-  --reduxStr:"75%";
+  --redux:85%;
+  --reduxStr:"85%";
+  --axios:80%;
+  --axiosStr:"80%";
+  --styledComponent:90%;
+  --styledComponentStr:"90%";
+  --sass:100%;
+  --sassStr:"100%";
 }
 .section{
   width: 100%;
@@ -20,6 +26,7 @@
   justify-content: space-evenly;
   align-items: baseline;
   padding-left:10px;
+  margin-bottom: 5%;
 }
 .about{
   position: inherit;
@@ -95,54 +102,72 @@
 }
 .htmlCss .bar::after{
   width:var(--htmlCss);
-  animation-name: Animhc;
-  animation-duration: 1.2s;
-  animation-timing-function: ease-in-out;
+  animation:Animhc 1.2s ease-in-out;
+  -webkit-animation:Animhc 1.2s ease-in-out;
 }
 .js .bar::before{
   content:var(--jsStr)
 }
 .js .bar::after{
   width:var(--js);
-  animation-name: Animjs;
-  animation-duration: 1.2s;
-  animation-timing-function: ease-in-out;
+  animation:Animjs 1.2s ease-in-out;
+  -webkit-animation:Animjs 1.2s ease-in-out;
 }
 .react .bar::before{
   content:var(--reactStr)
 }
 .react .bar::after{
   width:var(--react);
-  animation-name: Animrct;
-  animation-duration: 1.2s;
-  animation-timing-function: ease-in-out;
+  animation:Animrct 1.2s ease-in-out;
+  -webkit-animation:Animrct 1.2s ease-in-out;
 }
 .mui .bar::before{
   content: var(--muiStr)
 }
 .mui .bar::after{
   width:var(--mui);
-  animation-name: Animmui;
-  animation-duration: 1.2s;
-  animation-timing-function: ease-in-out;
+  animation:Animmui 1.2s ease-in-out;
+  -webkit-animation:Animmui 1.2s ease-in-out;
 }
 .bootstrap .bar::before{
   content: var(--bootstrapStr)
 }
 .bootstrap .bar::after{
   width:var(--bootstrap);
-  animation-name: Animboot;
-  animation-duration: 1.2s;
-  animation-timing-function: ease-in-out;
+  animation:Animboot 1.2s ease-in-out;
+  -webkit-animation:Animboot 1.2s ease-in-out;
 }
 .redux .bar::before{
   content: var(--reduxStr)
 }
 .redux .bar::after{
   width:var(--redux);
-  animation-name: Animredux;
-  animation-duration: 1.2s;
-  animation-timing-function: ease-in-out;
+  animation:Animredux 1.2s ease-in-out;
+  -webkit-animation:Animredux 1.2s ease-in-out;
+}
+.axios .bar::before{
+  content: var(--axiosStr)
+}
+.axios .bar::after{
+  width: var(--axios);
+  animation:Animaxios 1.2s ease-in-out;
+  -webkit-animation:Animaxios 1.2s ease-in-out;
+}
+.styledComponent .bar::before{
+  content: var(--styledComponentStr)
+}
+.styledComponent .bar::after{
+  width: var(--styledComponent);
+  animation:AnimstyledComponent 1.2s ease-in-out;
+  -webkit-animation:AnimstyledComponent 1.2s ease-in-out;
+}
+.sass .bar::before{
+  content: var(--sassStr)
+}
+.sass .bar::after{
+  width: var(--sass);
+  animation:Animsass 1.2s ease-in-out;
+  -webkit-animation:Animsass 1.2s ease-in-out;
 }
 @media only screen and (max-width:768px) and (orientation:landscape), only screen and (max-height:768px) and (orientation:portrait) {
   .section{
@@ -205,5 +230,29 @@
   }
   100%{
     width:var(--redux)
+  }
+}
+@keyframes Animaxios{
+  0%{
+    width: 0;
+  }
+  100%{
+    width:var(--axios)
+  }
+}
+@keyframes AnimstyledComponent{
+  0%{
+    width: 0;
+  }
+  100%{
+    width:var(--styledComponent)
+  }
+}
+@keyframes Animsass{
+  0%{
+    width: 0;
+  }
+  100%{
+    width:var(--sass)
   }
 }
