@@ -2,11 +2,16 @@ import Entertainment from './img/Entertainment-App.jpg'
 import bootstrap from './img/bootstrapsample.png.jpg'
 import calculator from  './img/calculator.png.jpg'
 import cryptocurrency from './img/cryptocurrency.jpg'
-import reduxcart from './img/redux-cart.jpg'
 import spinnerwheel from './img/spinnerwheel.png.jpg'
 import wordle from  './img/wordle.png.jpg'
-
+import MiniShop from './img/MiniShop.jpg'
 const resume = {
+  Ecommerce:{
+    name:'Ecommerce website (React,Redux,Material UI)',
+    preview:'https://sajjad-kazemi-minishop.netlify.app/',
+    code:'https://github.com/sajjad-kazemi/MiniShop',
+    img:MiniShop
+  },
   EntertainmentApp:{
     name:'Entertainment App (React,Redux,Styled Components)',
     preview:'https://sajjad-kazemi-entertainmentapp.netlify.app/',
@@ -14,7 +19,7 @@ const resume = {
     img:Entertainment
   },
   calculator:{
-    name:'Calculator (React)',
+    name:'Calculator (React-useReducer)',
     preview:'https://react-simplecalculator.netlify.app/',
     code:'https://github.com/sajjad-kazemi/React-SimpleCalculator',
     img:calculator
@@ -42,12 +47,6 @@ const resume = {
     preview:'https://sajjad-kazemi.github.io/Spinner-Wheel/',
     code:'https://github.com/sajjad-kazemi/Spinner-Wheel',
     img: spinnerwheel
-  },
-  reduxCart:{
-    name:'Shopping cart (Redux)',
-    preview:'https://shoppingcart-with-redux.netlify.app/',
-    code:'https://github.com/sajjad-kazemi/Redux-cart',
-    img:reduxcart
-  },
+  },  
 };
 export default resume;
