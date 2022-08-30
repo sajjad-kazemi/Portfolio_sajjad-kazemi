@@ -22,7 +22,7 @@ h1{
 .list-container{
   margin-top:2%;
 }
-@media only screen and (max-width:768px) and (orientation:landscape), only screen and (max-height:768px) and (orientation:portrait) {
+@media only screen and (max-width:768px) , only screen and (orientation:portrait){
   .list{
     grid-template-columns: 70vw;
   }
@@ -32,6 +32,6 @@ h1{
   }
   .list-container{
     margin-top:20%;
-    margin-bottom:25%;
+    margin-bottom:30vh;
   }
 }

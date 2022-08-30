@@ -1,23 +1,28 @@
-.btns{
+.btns {
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(0,0,0,0);
+  background: rgba(0, 0, 0, 0);
   transform-origin: center;
   transform: scale(0);
   -webkit-transform: scale(0);
   -moz-transform: scale(0);
   -ms-transform: scale(0);
   -o-transform: scale(0);
-  transition: transform .2s cubic-bezier(.75,.75,1,1) , background .1s ease-in , border-radius .1s ease-out ;
-  -webkit-transition: transform .2s cubic-bezier(.75,.75,1,1) , background .1s ease-in , border-radius .1s ease-out ;
-  -moz-transition: transform .2s cubic-bezier(.75,.75,1,1) , background .1s ease-in , border-radius .1s ease-out ;
-  -ms-transition: transform .2s cubic-bezier(.75,.75,1,1) , background .1s ease-in , border-radius .1s ease-out ;
-  -o-transition: transform .2s cubic-bezier(.75,.75,1,1) , background .1s ease-in , border-radius .1s ease-out ;
+  transition: transform 0.2s cubic-bezier(0.75, 0.75, 1, 1),
+    background 0.1s ease-in, border-radius 0.1s ease-out;
+  -webkit-transition: transform 0.2s cubic-bezier(0.75, 0.75, 1, 1),
+    background 0.1s ease-in, border-radius 0.1s ease-out;
+  -moz-transition: transform 0.2s cubic-bezier(0.75, 0.75, 1, 1),
+    background 0.1s ease-in, border-radius 0.1s ease-out;
+  -ms-transition: transform 0.2s cubic-bezier(0.75, 0.75, 1, 1),
+    background 0.1s ease-in, border-radius 0.1s ease-out;
+  -o-transition: transform 0.2s cubic-bezier(0.75, 0.75, 1, 1),
+    background 0.1s ease-in, border-radius 0.1s ease-out;
 }
-.sample:hover .btns{
-  background: rgba(0,0,0,.3);
+.sample:hover .btns {
+  background: rgba(0, 0, 0, 0.3);
   transform: scale(1);
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
@@ -29,13 +34,17 @@
   -ms-border-radius: 0;
   -o-border-radius: 0;
 }
-.btns button{
+.btns a {
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  font-family: inherit;
   background-color: rgba(255, 255, 255);
-  cursor:pointer;
-  color:#000000;
-  width: 100px ;
+  cursor: pointer;
+  color: #000000;
+  width: 100px;
   height: auto;
-  border:none;
+  border: none;
   border-radius: 100vh;
   -webkit-border-radius: 100vh;
   -moz-border-radius: 100vh;
@@ -43,80 +52,79 @@
   -o-border-radius: 100vh;
   margin: 0 10px;
 }
-.btns button:hover{
+.btns a:hover {
   background: #eeeeee;
 }
-.title{
-  width:100%;
-  position:absolute;
-  top:0;
-  left:50%;
-  color:white;
-  opacity:0;
+.title {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  color: white;
+  opacity: 0;
   text-align: center;
   font-size: 80% !important;
   font-weight: 700;
-  font-family:'Titian One', cursive;
+  font-family: "Titian One", cursive, 'Roboto Slab', serif;
   text-shadow: 0 0 20px black;
-  transform:translate(-50%,50%);
-  -webkit-transform:translate(-50%,50%);
-  -moz-transform:translate(-50%,50%);
-  -ms-transform:translate(-50%,50%);
-  -o-transform:translate(-50%,50%);
-  transition: all .3s ease-out;
-  -webkit-transition: all .3s ease-out;
-  -moz-transition: all .3s ease-out;
-  -ms-transition: all .3s ease-out;
-  -o-transition: all .3s ease-out;
+  transform: translate(-50%, 50%);
+  -webkit-transform: translate(-50%, 50%);
+  -moz-transform: translate(-50%, 50%);
+  -ms-transform: translate(-50%, 50%);
+  -o-transform: translate(-50%, 50%);
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
 }
-.sample:hover .title{
-  opacity:1;
+.sample:hover .title {
+  opacity: 1;
 }
-@media only screen and (max-width:768px) {
-  .btns button{
-    transform:translateY(150%);
-    -webkit-transform:translateY(150%);
-    -moz-transform:translateY(150%);
-    -ms-transform:translateY(150%);
-    -o-transform:translateY(150%);
-    border:2px solid black;
-    margin-top:10px;
-}
-  .btns{
+@media only screen and (max-width: 768px) , only screen and (orientation:portrait) {
+  .btns {
     width: 100%;
     align-items: flex-end;
     justify-content: center;
-    transition:none;
-    -webkit-transition:none;
-    -moz-transition:none;
-    -ms-transition:none;
-    -o-transition:none;
+    transition: none;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
     transform: none;
     -webkit-transform: none;
     -moz-transform: none;
     -ms-transform: none;
     -o-transform: none;
-}
-  .sample:hover .btns{
-    background:none;
-    
   }
-  .sample{
+  .btns a {
+    transform: translateY(150%);
+    -webkit-transform: translateY(150%);
+    -moz-transform: translateY(150%);
+    -ms-transform: translateY(150%);
+    -o-transform: translateY(150%);
+    border: 2px solid black;
+    margin-top: 10px;
+  }
+  .sample:hover .btns {
+    background: none;
+  }
+  .sample {
     margin-bottom: 30%;
     margin-top: 40px;
     display: flex;
     align-items: flex-end;
   }
-  .title{
-  color:black;
-  width: 100%;
-  opacity:1;
-  text-shadow: none;
-  transform: translate(-50%,-100%);
-  -webkit-transform: translate(-50%,-100%);
-  -moz-transform: translate(-50%,-100%);
-  -ms-transform: translate(-50%,-100%);
-  -o-transform: translate(-50%,-100%);
-  font-size: 100% !important;
-}
+  .title {
+    color: black;
+    width: 100%;
+    opacity: 1;
+    text-shadow: none;
+    transform: translate(-50%, -100%);
+    -webkit-transform: translate(-50%, -100%);
+    -moz-transform: translate(-50%, -100%);
+    -ms-transform: translate(-50%, -100%);
+    -o-transform: translate(-50%, -100%);
+    font-size: 85% !important;
+  }
 }

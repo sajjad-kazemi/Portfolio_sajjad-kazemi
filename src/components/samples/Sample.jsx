@@ -1,5 +1,4 @@
 import './Sample.css'
-
 function Sample({ resume }) {
   return (
     <>
@@ -8,8 +7,8 @@ function Sample({ resume }) {
         return (
           <div style={{backgroundImage:`url(${sample.img})`}} className="sample" key={index}>
             <div className="btns">
-              {sample.code && (<button onClick={()=> window.open(sample.code)} className="btnCode">Code</button>)}
-              {sample.preview && (<button onClick={() =>window.open(sample.preview)} className="btnPreview">Preview</button>)}
+              {sample.code && (<a target="_blank" href={sample.code}>Code</a>)}
+              {sample.preview && (<a target="_blank" href={sample.preview} >Preview</a>)}
             </div>
             <h1 className="title">{sample.name}</h1>
           </div>

@@ -1,6 +1,7 @@
 section{
   animation: enter .2s ;
   -webkit-animation: enter .2s forwards;
+  overflow: hidden;
 }
 @keyframes enter {
   from{
@@ -20,10 +21,7 @@ section{
     -o-transform: translateY(0);
 }
 }
-@media only screen and (max-width:768px) {
-  /* section{
-    margin-bottom: 20%;
-  } */
+@media only screen and (max-width:768px), only screen and (orientation:portrait){
   body{
     padding-top:0;
   }

@@ -7,6 +7,20 @@
 body{
   font-family: 'Roboto Slab', serif;
   overflow-y: scroll;
-  /* padding-top: 7vh; */
   background-color:#fff;
+}
+::-webkit-scrollbar{
+  background:white;
+  width:8px;
+}
+::-webkit-scrollbar-thumb{
+  background:#FFC815;
+  border-radius: 100vh;
+  -webkit-border-radius: 100vh;
+  -moz-border-radius: 100vh;
+  -ms-border-radius: 100vh;
+  -o-border-radius: 100vh;
+}
+::-webkit-scrollbar-thumb:active{
+  background: #efbf23;
 }

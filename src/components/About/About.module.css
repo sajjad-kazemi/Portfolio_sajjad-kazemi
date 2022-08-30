@@ -1,22 +1,48 @@
 :root{
-  --htmlCss: 100%;
-  --htmlCssStr: "100%";
+  --htmlCss: 90%;
+  --htmlCssStr: "90%";
   --js:90%;
   --jsStr:"90%";
   --react:80%;
   --reactStr:"80%";
   --mui:90%;
   --muiStr:"90%";
-  --bootstrap:100%;
-  --bootstrapStr: "100%";
+  --bootstrap:90%;
+  --bootstrapStr: "90%";
   --redux:80%;
   --reduxStr:"80%";
-  --axios:80%;
-  --axiosStr:"80%";
+  --api:90%;
+  --apiStr:"90%";
   --styledComponent:90%;
   --styledComponentStr:"90%";
   --sass:80%;
   --sassStr:"80%";
+  --git:90%;
+  --gitStr:"90%";
+}
+.details{
+  width:70%;
+  height:fit-content;
+  margin: 10px auto 5% auto;
+  display: flex;
+  padding: 40px;
+}
+.parentList{}
+.parentItem{
+  list-style-type: disc;
+}
+.parentItem::first-letter{
+  text-transform: capitalize;
+}
+.childList{
+  margin-left:15px;
+  margin-bottom: 5px;
+}
+.childItem{
+  font-weight: 100;
+}
+.childItem::first-letter{
+  text-transform: capitalize;
 }
 .section{
   width: 100%;
@@ -26,7 +52,7 @@
   justify-content: space-evenly;
   align-items: baseline;
   padding-left:10px;
-  margin-bottom: 5%;
+  margin-bottom: 3%;
 }
 .about{
   position: inherit;
@@ -45,6 +71,7 @@
   align-self: center;
   padding-right: 10px;
   width: 50vw;
+  margin: 0 40px;
 }
 .title{
   font-family: 'Raleway' , sans-serif;
@@ -145,11 +172,11 @@
   animation:Animredux 1.2s ease-in-out;
   -webkit-animation:Animredux 1.2s ease-in-out;
 }
-.axios .bar::before{
-  content: var(--axiosStr)
+.api .bar::before{
+  content: var(--apiStr)
 }
-.axios .bar::after{
-  width: var(--axios);
+.api .bar::after{
+  width: var(--api);
   animation:Animaxios 1.2s ease-in-out;
   -webkit-animation:Animaxios 1.2s ease-in-out;
 }
@@ -169,10 +196,19 @@
   animation:Animsass 1.2s ease-in-out;
   -webkit-animation:Animsass 1.2s ease-in-out;
 }
-@media only screen and (max-width:768px) and (orientation:landscape), only screen and (max-height:768px) and (orientation:portrait) {
+.git .bar::before{
+  content: var(--gitStr)
+}
+.git .bar::after{
+  width:var(--git);
+  animation:AnimGit 1.2s ease-in-out;
+  -webkit-animation:AnimGit 1.2s ease-in-out;
+}
+@media only screen and (max-width:768px) , only screen and(orientation:portrait) {
   .section{
     flex-direction: column;
-    margin-bottom: 30vmax;
+    margin-bottom: 10%;
+    margin-top:5%;
     align-items: center;
     justify-content: center;
   }
@@ -182,6 +218,10 @@
   }
   .skills{
     width: 100%;
+  }
+  .details{
+    width:90%;
+    margin-bottom: 30vh;
   }
 }
 @keyframes Animhc {
@@ -237,7 +277,7 @@
     width: 0;
   }
   100%{
-    width:var(--axios)
+    width:var(--api)
   }
 }
 @keyframes AnimstyledComponent{
@@ -254,5 +294,13 @@
   }
   100%{
     width:var(--sass)
+  }
+}
+@keyframes AnimGit{
+  0%{
+    width: 0;
+  }
+  100%{
+    width:var(--git)
   }
 }
