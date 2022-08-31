@@ -6,7 +6,7 @@ function About() {
     <>
       <section className={style.section}>
         <div className={style.about}>
-          <div className={style.title}><h3>Sajjad Kazemi</h3></div>
+          <div className={style.title}><h3>Sajjad Kazemi</h3><h4>🧑 20</h4></div>
           <div className={style.title}><h1>Front-End Developer From Iran</h1></div>
           <p className={style.aboutText}>A talented Front-end developer who pursues his big dreams in web development and Advance his career.<br/>
           I don't have any experience of working in a company but I'm sure I'm gonna be working with great developers in many companies in the future. </p>
@@ -54,7 +54,7 @@ function About() {
           </li>
           <li className={style.parentItem}>
             <h3>
-              Expert in Git , remote git repositories (Github & Gitlab)
+              Expert in <strong>Git</strong> , remote git repositories (Github & Gitlab)
             </h3>
             <ul className={style.childList}>
               <li className={style.childItem}>
@@ -68,7 +68,7 @@ function About() {
             </h3>
             <ul className={style.childList}>
               <li className={style.childItem}>
-              implementing the front-end logic that defines the behavior of the visual elements of a web application.
+              implementing the <strong>front-end</strong> logic that defines the behavior of the visual elements of a web application.
               </li>
               <li className={style.childItem}>
                 connecting the web application with the services that resides on the back-end. 
@@ -77,25 +77,66 @@ function About() {
           </li>
           <li className={style.parentItem}>
             <h3>
-              
+              React JS library ( <span>advanced level</span> )
             </h3>
             <ul className={style.childList}>
               <li className={style.childItem}>
-                
+                Building large and super-fast web applications using <strong>React JS</strong> library, with reusable, maintainable and manageable <strong>Functional Components</strong>.
               </li>
             </ul>
           </li>
-          {/* template */}
-          {/* <li className={style.parentItem}>
+          <li className={style.parentItem}>
             <h3>
-              
+              react Hooks and component lifecycle
             </h3>
             <ul className={style.childList}>
               <li className={style.childItem}>
-                
+                utilizing <strong>React hooks</strong> with Functional Component to get rid of redundancy and increasing the efficiency and clean code standard.
+              </li>
+              <li className={style.childItem}>
+                  mostly used ones are <strong>useState</strong> and <strong>useEffect</strong>.
               </li>
             </ul>
-          </li> */}
+          </li>
+          <li className={style.parentItem}>
+            <h3>
+              working with API and Calling the server
+            </h3>
+            <ul className={style.childList}>
+              <li className={style.childItem}>
+                call the server with all the type of <strong>APIs</strong> to send request analyze response and handle all errors in the efficient way to display on the client-side.
+              </li>
+              <li className={style.childItem}>
+                implementing the Authentication and authorization process, verify or redirect the user in some protected Routes.
+              </li>
+              <li className={style.childItem}>
+                Good knowledge of working with query string and dynamic or static navigation (routing) of user between pages.
+              </li>
+              <li className={style.childItem}>
+                making requests with <strong>Axios</strong> to Get, Post, Put or Delete the data.
+              </li>
+            </ul>
+          </li>
+          <li className={style.parentItem}>
+            <h3>
+              familiar with Redux and Redux Toolkit
+            </h3>
+            <ul className={style.childList}>
+              <li className={style.childItem}>
+                I can use <strong>Redux</strong> to get rid of props drilling by using the <strong>Redux Toolkit</strong> package and access to all states in each component by using the <strong>React-Redux</strong> library.
+              </li>
+            </ul>
+          </li>
+          <li className={style.parentItem}>
+            <h3>
+              familiar with Sass preprocessor
+            </h3>
+            <ul className={style.childList}>
+              <li className={style.childItem}>
+                i know how to use variables, mathematical operations, mixins, loops, functions, imports and other functionalities to write more powerful css with <strong>Sass</strong>.
+              </li>
+            </ul>
+          </li>
         </ul>
       </section>
     </>
