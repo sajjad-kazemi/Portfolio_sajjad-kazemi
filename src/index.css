@@ -1,7 +1,7 @@
 section{
   animation: enter .2s ;
   -webkit-animation: enter .2s forwards;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 @keyframes enter {
   from{

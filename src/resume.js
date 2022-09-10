@@ -43,7 +43,7 @@ const resume = {
     img:bootstrap
   },
   spinnerWheel:{
-    name:'Spinner Wheel (JS)',
+    name:'Spinner Wheel (JS) not responsive for mobile:(',
     preview:'https://sajjad-kazemi.github.io/Spinner-Wheel/',
     code:'https://github.com/sajjad-kazemi/Spinner-Wheel',
     img: spinnerwheel

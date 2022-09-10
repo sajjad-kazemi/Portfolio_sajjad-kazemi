@@ -9,6 +9,7 @@ h1{
   grid-auto-flow: dense;
   grid-gap: 1rem;
   margin-bottom: 5%;
+  padding: 15px 0 0 0;
 }
 .sample{
   position:relative;

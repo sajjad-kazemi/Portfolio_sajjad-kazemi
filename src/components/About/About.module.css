@@ -1,4 +1,4 @@
-:root{
+.skills{
   --htmlCss: 90%;
   --htmlCssStr: "90%";
   --js:90%;
@@ -81,6 +81,10 @@
   text-align: left;
   margin-bottom: 10px;
   width: 100%;
+}
+.title h4{
+  font-family:'Roboto slab', cursive;
+  font-weight:100;
 }
 .aboutText{
   font-family: 'Raleway', sans-serif;

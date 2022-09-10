@@ -6,7 +6,7 @@ function About() {
     <>
       <section className={style.section}>
         <div className={style.about}>
-          <div className={style.title}><h3>Sajjad Kazemi</h3><h4>🧑 20</h4></div>
+          <div className={style.title}><h3>Sajjad Kazemi</h3><h4>2002-now 🧑</h4></div>
           <div className={style.title}><h1>Front-End Developer From Iran</h1></div>
           <p className={style.aboutText}>A talented Front-end developer who pursues his big dreams in web development and Advance his career.<br/>
           I don't have any experience of working in a company but I'm sure I'm gonna be working with great developers in many companies in the future. </p>

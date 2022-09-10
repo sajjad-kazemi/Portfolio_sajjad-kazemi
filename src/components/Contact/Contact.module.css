@@ -55,13 +55,24 @@
   flex-direction: column;
   width: 100%;
 }
+.form :where(textarea, input, button){
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-width: 1px;
+}
 .userName , .userEmail{
   margin-bottom: 20px;
+  padding:5px;
 }
 .userMessage{
   resize:vertical;
   font-size: 1rem;
   font-weight: 500;
+  padding:5px;
+  margin-bottom: 10px;
 }
 .submit{
   display: flex;
@@ -82,7 +93,9 @@
   background:#ffd446
 }
 .success{
+  text-align: center;
   color:rgb(24, 237, 74);
-  width: 10px;
-  height: 10px;
+  width: 100%;
+  height: auto;
+  min-height: 30px;
 }
