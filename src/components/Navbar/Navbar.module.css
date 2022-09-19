@@ -127,9 +127,6 @@
   -webkit-animation:rainbow 3s linear infinite;
   background-position: 0%;
 }
-.aboutLink:hover{
-  animation-duration: 1.5s;
-}
 @keyframes rainbow {
   100%{
   background-position: 100%;
