@@ -25,6 +25,8 @@ function About() {
       </section>
       <hr />
       <section className={style.details}>
+          <h1>Skills</h1>
+          <hr/>
         <ul className={style.parentList}>
           <li className={style.parentItem}>
             <h3>
@@ -87,7 +89,7 @@ function About() {
           </li>
           <li className={style.parentItem}>
             <h3>
-              react Hooks and component lifecycle
+              react Hooks
             </h3>
             <ul className={style.childList}>
               <li className={style.childItem}>

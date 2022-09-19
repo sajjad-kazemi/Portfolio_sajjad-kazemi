@@ -26,9 +26,9 @@
   align-items:center;
   text-decoration: none;
   letter-spacing: 2px;
-  color:inherit !important;
+  color:inherit;
 }
-.list li a:hover{
+.list li a:hover:not(.aboutLink){
   color:rgb(74, 74, 74) !important;
 }
 .list li svg{
@@ -46,7 +46,7 @@
   top:0;
   display: flex;
   justify-content: space-between;
-  background:#FFC815;
+  background:#ffc815;
   color:#000;
   user-select: none;
   overflow:hidden;
@@ -114,5 +114,24 @@
   }
   .logo h1{
     display: none;
+  }
+}
+.aboutLink{
+  background-image: linear-gradient(to right, #000,#21a 35%,#1ff 50%,#21a 65%,#000);
+  color:transparent;
+  /* -webkit-text-fill-color: transparent; */
+  background-size: 1000%;
+  background-clip:text;
+  -webkit-background-clip: text;
+  animation:rainbow 3s linear infinite;
+  -webkit-animation:rainbow 3s linear infinite;
+  background-position: 0%;
+}
+.aboutLink:hover{
+  animation-duration: 1.5s;
+}
+@keyframes rainbow {
+  100%{
+  background-position: 100%;
   }
 }

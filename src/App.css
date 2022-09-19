@@ -14,7 +14,7 @@ body{
   width:8px;
 }
 ::-webkit-scrollbar-thumb{
-  background:#FFC815;
+  background:#ffc815;
   border-radius: 100vh;
   -webkit-border-radius: 100vh;
   -moz-border-radius: 100vh;
