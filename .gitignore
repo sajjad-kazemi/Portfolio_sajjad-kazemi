@@ -1,5 +1,5 @@
 node_modules
+/dist
 src/components/Contact/emailJs.js
-dist
 # Local Netlify folder
 .netlify
