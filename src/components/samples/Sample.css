@@ -64,8 +64,8 @@
   opacity: 0;
   text-align: center;
   font-size: 80% !important;
-  font-weight: 700;
-  font-family: "Titian One", cursive, 'Roboto Slab', serif;
+  font-weight: 300;
+  font-family: 'Fredoka One', cursive, 'Roboto Slab', serif;
   text-shadow: 0 0 20px black;
   transform: translate(-50%, 50%);
   -webkit-transform: translate(-50%, 50%);

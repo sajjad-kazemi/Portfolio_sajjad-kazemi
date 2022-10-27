@@ -7,9 +7,9 @@ import style from "./Contact.module.css";
 function Contact() {
   const [success, setSuccess] = useState({ visibility: "hidden" });
   const form = useRef();
-  const sendEmail = (e) => {
+  const sendEmail = async (e) => {
     e.preventDefault();
-    emailJs(e, setSuccess, form);
+    emailJs(setSuccess, form);
     const inputs = form.current.children
     for (let i in inputs){
       if(inputs[i].value){
@@ -63,7 +63,6 @@ function Contact() {
             className={style.userMessage}
             required
             rows="6"
-            
             name="message"
           />
           <button

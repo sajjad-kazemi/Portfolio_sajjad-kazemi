@@ -55,6 +55,9 @@
   flex-direction: column;
   width: 100%;
 }
+.form label{
+  font-family: 'Roboto-Slab', sans-serif;
+}
 .form :where(textarea, input, button){
   border-radius: 10px;
   -webkit-border-radius: 10px;

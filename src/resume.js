@@ -19,12 +19,6 @@ const resume = {
     code:'https://github.com/sajjad-kazemi/TodoList',
     img:TodoList
   },
-  EntertainmentApp:{
-    name:'Entertainment App (React,Redux,Styled Components)',
-    preview:'https://sajjad-kazemi-entertainmentapp.netlify.app/',
-    code:'https://github.com/sajjad-kazemi/Entertainment-React-App',
-    img:Entertainment
-  },
   calculator:{
     name:'Calculator (React-useReducer)',
     preview:'https://react-simplecalculator.netlify.app/',
@@ -43,17 +37,23 @@ const resume = {
     code:'https://github.com/sajjad-kazemi/React-CryptoCurrency',
     img:Cryptocurrency
   },
-  spinnerWheel:{
-    name:'Spinner Wheel (JS)',
-    preview:'https://sajjad-kazemi.github.io/Spinner-Wheel/',
-    code:'https://github.com/sajjad-kazemi/Spinner-Wheel',
-    img: SpinnerWheel
-  },  
-  // bootstrap:{
-  //   name:'Bootstrap Responsive Sample',
-  //   preview:'https://sajjad-kazemi.github.io/Bootstrap-miniproject/',
-  //   code:'https://github.com/sajjad-kazemi/Bootstrap-miniproject',
-  //   img:Bootstrap
-  // },
+  // spinnerWheel:{
+    //   name:'Spinner Wheel (JS)',
+  //   preview:'https://sajjad-kazemi.github.io/Spinner-Wheel/',
+  //   code:'https://github.com/sajjad-kazemi/Spinner-Wheel',
+  //   img: SpinnerWheel
+  // },  
+  bootstrap:{
+    name:'Bootstrap Responsive Sample',
+    preview:'https://sajjad-kazemi.github.io/Bootstrap-miniproject/',
+    code:'https://github.com/sajjad-kazemi/Bootstrap-miniproject',
+    img:Bootstrap
+  },
+  EntertainmentApp:{
+    name:'Entertainment App (React,Redux,Styled Components)',
+    preview:'https://sajjad-kazemi-entertainmentapp.netlify.app/',
+    code:'https://github.com/sajjad-kazemi/Entertainment-React-App',
+    img:Entertainment
+  },
 };
 export default resume;
