@@ -101,6 +101,14 @@ function About() {
             </ul>
           </li>
           <li className={style.parentItem}>
+            <h3>TypeScript ( <span>Intermediate</span> )</h3>
+            <ul className={style.childList}>
+              <li className={style.childItem}>
+                i know the basics of the <strong>Typescript</strong> and how to use it in the projects.
+              </li>
+            </ul>
+          </li>
+          <li className={style.parentItem}>
             <h3>
               working with API and Calling the server
             </h3>

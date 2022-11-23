@@ -37,7 +37,7 @@
   margin-top:10px;
   margin-bottom: 5px;
 }
-.parentItem span{
+.parentItem h3 > span{
   color:red;
   text-transform: capitalize;
 }
