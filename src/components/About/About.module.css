@@ -15,10 +15,12 @@
   --apiStr:"100%";
   --styledComponent:100%;
   --styledComponentStr:"100%";
-  --sass:100%;
-  --sassStr:"100%";
-  --git:100%;
-  --gitStr:"100%";
+  --sass:90%;
+  --sassStr:"90%";
+  --git:90%;
+  --gitStr:"90%";
+  --ts:80%;
+  --tsStr:"80%";
 }
 .details{
   width:70%;
@@ -136,6 +138,13 @@
   position:absolute;
   z-index:10;
 }
+/*? impt: important */
+.impt{
+  color:#21008e;
+}
+.impt .bar::before{
+  color:black;
+}
 
 .htmlCss .bar::before{
   content:var(--htmlCssStr);
@@ -216,6 +225,14 @@
   width:var(--git);
   animation:AnimGit 1.2s ease-in-out;
   -webkit-animation:AnimGit 1.2s ease-in-out;
+}
+.ts .bar::before{
+  content: var(--tsStr)
+}
+.ts .bar::after{
+  width:var(--ts);
+  animation:AnimTs 1.2s ease-in-out;
+  -webkit-animation:AnimTs 1.2s ease-in-out;
 }
 @media only screen and (max-width:768px) , only screen and(orientation:portrait) {
   .section{
@@ -321,5 +338,13 @@
   }
   100%{
     width:var(--git)
+  }
+}
+@keyframes AnimTs {
+  0%{
+    width:0;
+  }
+  100%{
+    width:var(--ts)
   }
 }

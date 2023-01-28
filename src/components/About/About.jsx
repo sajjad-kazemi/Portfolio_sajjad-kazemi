@@ -12,15 +12,16 @@ function About() {
           I don't have any experience of working in a company but I'm sure I'm gonna be working with great developers in many companies in the future. </p>
         </div>
         <div className={style.skills}>
-          <div className={`${style.skillBar} ${style.htmlCss}`}><h3>html5-css3</h3><div className={`${style.bar}`}></div></div>
-          <div className={`${style.skillBar} ${style.js}`}><h3>JavaScript</h3><div className={`${style.bar}`}></div></div>
-          <div className={`${style.skillBar} ${style.git}`}><h3>Git</h3><div className={`${style.bar}`}></div></div>
-          <div className={`${style.skillBar} ${style.react}`}><h3>React js</h3><div className={`${style.bar}`}></div></div>
+          <div className={`${style.skillBar} ${style.htmlCss} ${style.impt}`}><h3>html5-css3</h3><div className={`${style.bar}`}></div></div>
+          <div className={`${style.skillBar} ${style.sass}`}><h3>Sass</h3><div className={`${style.bar}`}></div></div>
+          <div className={`${style.skillBar} ${style.js} ${style.impt}`}><h3>JavaScript</h3><div className={`${style.bar}`}></div></div>
+          <div className={`${style.skillBar} ${style.react} ${style.impt}`}><h3>React js</h3><div className={`${style.bar}`}></div></div>
           <div className={`${style.skillBar} ${style.redux}`}><h3>Redux</h3><div className={`${style.bar}`}></div></div>
           <div className={`${style.skillBar} ${style.mui}`}><h3>Material UI</h3><div className={`${style.bar}`}></div></div>
-          <div className={`${style.skillBar} ${style.api}`}><h3>Api</h3><div className={`${style.bar}`}></div></div>
           <div className={`${style.skillBar} ${style.styledComponent}`}><h3>Styled Components</h3><div className={`${style.bar}`}></div></div>
-          <div className={`${style.skillBar} ${style.sass}`}><h3>Sass</h3><div className={`${style.bar}`}></div></div>
+          <div className={`${style.skillBar} ${style.ts} ${style.impt}`}><h3>Typescript</h3><div className={`${style.bar}`}></div></div>
+          <div className={`${style.skillBar} ${style.api}`}><h3>Api</h3><div className={`${style.bar}`}></div></div>
+          <div className={`${style.skillBar} ${style.git} ${style.impt}`}><h3>Git</h3><div className={`${style.bar}`}></div></div>
         </div>
       </section>
       <hr />
