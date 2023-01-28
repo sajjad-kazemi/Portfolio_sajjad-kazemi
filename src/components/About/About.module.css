@@ -1,24 +1,24 @@
 .skills{
-  --htmlCss: 90%;
-  --htmlCssStr: "90%";
-  --js:90%;
-  --jsStr:"90%";
-  --react:80%;
-  --reactStr:"80%";
-  --mui:90%;
-  --muiStr:"90%";
-  --bootstrap:90%;
-  --bootstrapStr: "90%";
-  --redux:80%;
-  --reduxStr:"80%";
-  --api:90%;
-  --apiStr:"90%";
-  --styledComponent:90%;
-  --styledComponentStr:"90%";
-  --sass:80%;
-  --sassStr:"80%";
-  --git:90%;
-  --gitStr:"90%";
+  --htmlCss: 100%;
+  --htmlCssStr: "100%";
+  --js:100%;
+  --jsStr:"100%";
+  --react:90%;
+  --reactStr:"90%";
+  --mui:100%;
+  --muiStr:"100%";
+  --bootstrap:100%;
+  --bootstrapStr: "100%";
+  --redux:100%;
+  --reduxStr:"100%";
+  --api:100%;
+  --apiStr:"100%";
+  --styledComponent:100%;
+  --styledComponentStr:"100%";
+  --sass:100%;
+  --sassStr:"100%";
+  --git:100%;
+  --gitStr:"100%";
 }
 .details{
   width:70%;
