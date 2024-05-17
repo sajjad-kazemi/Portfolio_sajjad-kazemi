@@ -5,34 +5,16 @@
   align-items: center;
   background: rgba(0, 0, 0, 0);
   transform-origin: center;
-  transform: scale(0);
-  -webkit-transform: scale(0);
-  -moz-transform: scale(0);
-  -ms-transform: scale(0);
-  -o-transform: scale(0);
-  transition: transform 0.2s cubic-bezier(0.75, 0.75, 1, 1),
-    background 0.1s ease-in, border-radius 0.1s ease-out;
-  -webkit-transition: transform 0.2s cubic-bezier(0.75, 0.75, 1, 1),
-    background 0.1s ease-in, border-radius 0.1s ease-out;
-  -moz-transition: transform 0.2s cubic-bezier(0.75, 0.75, 1, 1),
-    background 0.1s ease-in, border-radius 0.1s ease-out;
-  -ms-transition: transform 0.2s cubic-bezier(0.75, 0.75, 1, 1),
-    background 0.1s ease-in, border-radius 0.1s ease-out;
-  -o-transition: transform 0.2s cubic-bezier(0.75, 0.75, 1, 1),
-    background 0.1s ease-in, border-radius 0.1s ease-out;
+  opacity:0;
+  transition:ease 250ms;
+  -webkit-transition:ease 250ms;
+  -moz-transition:ease 250ms;
+  -ms-transition:ease 250ms;
+  -o-transition:ease 250ms;
 }
 .sample:hover .btns {
+  opacity:1;
   background: rgba(0, 0, 0, 0.5);
-  transform: scale(1);
-  -webkit-transform: scale(1);
-  -moz-transform: scale(1);
-  -ms-transform: scale(1);
-  -o-transform: scale(1);
-  border-radius: 0;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -ms-border-radius: 0;
-  -o-border-radius: 0;
 }
 .btns a {
   text-decoration: none;
@@ -83,19 +65,10 @@
 }
 @media only screen and (max-width: 768px) , only screen and (orientation:portrait) {
   .btns {
+    opacity:1;
     width: 100%;
     align-items: flex-end;
     justify-content: center;
-    transition: none;
-    -webkit-transition: none;
-    -moz-transition: none;
-    -ms-transition: none;
-    -o-transition: none;
-    transform: none;
-    -webkit-transform: none;
-    -moz-transform: none;
-    -ms-transform: none;
-    -o-transform: none;
   }
   .btns a {
     transform: translateY(150%);

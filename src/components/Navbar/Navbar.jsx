@@ -30,7 +30,7 @@ function Navbar() {
           <li>
             <Link onClick={scrollUp} to="/About">
               <Person />
-              {window.innerWidth > 768 && <span className={style.aboutLink} >ABOUT</span>}
+              {window.innerWidth > 768 && <span className={style.aboutLink} >ABOUT ME</span>}
             </Link>
           </li>
           <li>

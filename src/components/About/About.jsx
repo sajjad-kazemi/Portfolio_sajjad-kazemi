@@ -7,12 +7,12 @@ function About() {
       <section className={style.section}>
         <div className={style.about}>
           <div className={style.title}><h3>Sajjad Kazemi</h3><h4>2002-now 🧑</h4></div>
-          <div className={style.title}><h1>Front-End Developer From Iran</h1></div>
-          <p className={style.aboutText}>A talented Front-end developer who pursues his big dreams in web development and Advance his career.<br/>
-          I don't have any experience of working in a company but I'm sure I'm gonna be working with great developers in many companies in the future. </p>
+          <div className={style.title}><h1>Software Engineer From Iran</h1></div>
+          <p className={style.aboutText}>Hi there! I'm Sajjad, a passionate Front-end developer with a love for software engineering. With a strong foundation in HTML, CSS, JavaScript, ReactJs, NextJs, and various libraries, I'm excited to bring my skills to a dynamic team. Although I don't have extensive corporate experience, I've had the opportunity to hone my skills through freelance projects, which have given me a unique perspective on problem-solving and collaboration. I'm now eager to apply my skills and knowledge in a company setting, where I can contribute to innovative projects and continue to learn and grow. </p>
+          <p className={style.aboutText}>Hi there! I'm Sajjad, a passionate Front-end developer with a love for software engineering. With a strong foundation in HTML, CSS, JavaScript, ReactJs, NextJs, and various libraries, I'm excited to bring my skills to a dynamic team. Although I don't have extensive corporate experience, I've had the opportunity to hone my skills through freelance projects, which have given me a unique perspective on problem-solving and collaboration. <br/>Specifically, I've gained hands-on experience with WordPress, having designed and developed multiple websites using this popular platform. Additionally, I've worked on optimizing website performance and improving search engine rankings through SEO techniques, which has been a valuable learning experience.<br/>I'm now eager to apply my skills and knowledge in a company setting, where I can contribute to innovative projects and continue to learn and grow. </p>
         </div>
         <div className={style.skills}>
-          <div className={`${style.skillBar} ${style.htmlCss} ${style.impt}`}><h3>html5-css3</h3><div className={`${style.bar}`}></div></div>
+          <div className={`${style.skillBar} ${style.htmlCss} ${style.impt}`}><h3>HTML & CSS</h3><div className={`${style.bar}`}></div></div>
           <div className={`${style.skillBar} ${style.sass}`}><h3>Sass</h3><div className={`${style.bar}`}></div></div>
           <div className={`${style.skillBar} ${style.js} ${style.impt}`}><h3>JavaScript</h3><div className={`${style.bar}`}></div></div>
           <div className={`${style.skillBar} ${style.react} ${style.impt}`}><h3>React js</h3><div className={`${style.bar}`}></div></div>
